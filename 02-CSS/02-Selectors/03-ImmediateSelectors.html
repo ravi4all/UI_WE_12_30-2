@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*Immediate Child*/
+        #parent > p {
+            color: red;
+            font-size: 25px;
+        }
+        /*Immediate Sibling*/
+        #parent + h2 {
+            color: red;
+            font-size: 40px;
+        }
+        /*All Sibling Selectors*/
+        #parent ~ h2 {
+            color: red;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Immediate Selectors</h1>
+   
+   <div id="parent">
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam incidunt, fugit aut. Mollitia rem, laboriosam. Est voluptate asperiores beatae non, incidunt ipsa repellat omnis, quia perferendis odit suscipit eum obcaecati.
+       </p>
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam incidunt, fugit aut. Mollitia rem, laboriosam. Est voluptate asperiores beatae non, incidunt ipsa repellat omnis, quia perferendis odit suscipit eum obcaecati.
+       </p>
+       <div class="child">
+           <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam incidunt, fugit aut. Mollitia rem, laboriosam. Est voluptate asperiores beatae non, incidunt ipsa repellat omnis, quia perferendis odit suscipit eum obcaecati.
+       </p>
+           <div class="grandChild">
+               <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam incidunt, fugit aut. Mollitia rem, laboriosam. Est voluptate asperiores beatae non, incidunt ipsa repellat omnis, quia perferendis odit suscipit eum obcaecati.
+       </p>
+           </div>
+       </div>
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam incidunt, fugit aut. Mollitia rem, laboriosam. Est voluptate asperiores beatae non, incidunt ipsa repellat omnis, quia perferendis odit suscipit eum obcaecati.
+       </p>
+   </div>
+   <hr>
+   <h2>This heading is outside parent div</h2>
+   <h2>This heading is outside parent div</h2>
+   <h2>This heading is outside parent div</h2>
+    
+</body>
+</html>
