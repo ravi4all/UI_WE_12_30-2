@@ -1,0 +1,32 @@
+body {
+    background-image: url("http://st3.cricketcountry.com/wp-content/uploads/2016/03/Indias-captain-Mahendra-Singh-Dhoni-makes-field-placement-during-the-first-T20-international-match-between-India-and-Sri-Lanka.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 300px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    /*background-image: url("../../images/WebImages/the-joker-black-white.jpeg");*/
+    background-image: url("../../images/WebImages/IMG-20140419-WA0003.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 100px 100px;
+}
+#div_2 {
+    background-image: url("../../images/WebImages/batman_arkham_knight-1366x768.jpg");
+}
+#div_3 {
+    background-image: url("../../images/WebImages/Iron-Man-3-2013-Wallpaper.jpg");
+}
+#div_4 {
+    background-image: url("../../images/WebImages/Terminator002.jpg");
+}
+#div_5 {
+    background-image: url("../../images/NewImages/3d-abstract-dead-city-wallpaper.jpg");
+}
