@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>Form Elements</h1>
+   
+   <form action="#">
+       <table>
+           <tr>
+               <td><label for="username">Enter Name</label></td>
+               <td><input type="text" required id="username" placeholder="Enter Name" value="Ram"></td>
+           </tr>
+           <tr>
+               <td>Enter Password</td>
+               <td><input type="password" required placeholder="Enter Password" value="ram"></td>
+           </tr>
+           <tr>
+               <td>Enter Email</td>
+               <td><input type="email" autofocus placeholder="Enter email"></td>
+           </tr>
+           <tr>
+               <td>Enter DOB</td>
+               <td><input type="date"></td>
+               <td><input type="datetime-local"></td>
+               <td><input type="time"></td>
+               <td><input type="week"></td>
+               <td><input type="month"></td>
+           </tr>
+           <tr>
+               <td>Enter URL</td>
+               <td><input type="url" placeholder="Enter URL"></td>
+           </tr>
+           <tr>
+               <td>Enter Age</td>
+               <td><input type="number" placeholder="Enter age" min="18" max="30"></td>
+           </tr>
+           <tr>
+               <td>Enter phone num</td>
+               <td><input type="text" placeholder="Enter mobile num" maxlength="10"></td>
+           </tr>
+           <tr>
+               <td>Enter Card number</td>
+               <td><input type="text" placeholder="Enter car number" pattern="[0-9]{5}[a-z]{3}[A-Z]{2}" title="5 digits, 3 small case, 2 Upper case letter"></td>
+           </tr>
+           <tr>
+               <td>Select Range</td>
+               <td><input type="range" onchange="output.value = value" value="50" min="0" max="100" step="10"></td>
+               <td><output id="output">50</output></td>
+           </tr>
+           <tr>
+               <td>Choose Color</td>
+               <td><input type="color"></td>
+           </tr>
+           <tr>
+               <td>Your Progress</td>
+               <td><progress value="30" max="100"></progress></td>
+           </tr>
+           <tr>
+               <td>Enter your message</td>
+               <td><textarea cols="30" rows="10" spellcheck="true"></textarea></td>
+           </tr>
+           <tr>
+               <td>Upload File</td>
+               <td><input type="file"></td>
+           </tr>
+           
+           <tr>
+               <td></td>
+               <td><input type="submit" value="Register"></td>
+           </tr>
+       </table>
+   </form>
+    
+</body>
+</html>
