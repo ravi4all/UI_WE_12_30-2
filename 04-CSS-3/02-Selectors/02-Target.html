@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            height: 600px;
+            padding-top: 110px;
+            display: none;
+        }
+        #header {
+            height: auto;
+            position: fixed;
+            width: 100%;
+            background-color: lightblue;
+            top: 0px;
+            text-align: center;
+        }
+        #home {
+            display: block;
+        }
+        #gallery:target, 
+        #contact:target, 
+        #gallery:target, 
+        #about:target{
+            display: block;
+        }
+        #gallery:target ~ #home,
+        #contact:target ~ #home,
+        #about:target ~ #home{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   
+   <header id="header">
+       <h1>Target</h1>
+           <a href="#home">Home</a>
+           <a href="#gallery">Gallery</a>
+           <a href="#contact">Contact</a>
+           <a href="#about">About</a>
+   </header>
+   
+   
+   <div id="gallery">
+       <h2>This is gallery</h2>
+       <img src="../../images/images/download%20(1).jpg" alt="">
+       <img src="../../images/images/download%20(1).jpg" alt="">
+       <img src="../../images/images/download%20(1).jpg" alt="">
+       <img src="../../images/images/download%20(1).jpg" alt="">
+       <img src="../../images/images/download%20(1).jpg" alt="">
+       <img src="../../images/images/download%20(1).jpg" alt="">
+   </div>
+   
+   <div id="contact">
+       <h2>This is contact Section</h2>
+       <p>
+           Call us @ 8989898989
+       </p>
+   </div>
+   
+   <div id="about">
+       <h2>About Us</h2>
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus in laborum adipisci quaerat dignissimos, eaque fugiat veritatis quod architecto earum neque, cupiditate consequatur animi quo nesciunt vitae dolorum, molestiae placeat!
+       </p>
+   </div>
+   
+   <div id="home">
+       <h2>This is home section</h2>
+   </div>
+    
+</body>
+</html>
