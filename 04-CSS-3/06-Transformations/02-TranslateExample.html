@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        #parent {
+            transition: 2s;
+            height: 400px;
+            background-size: 100% 100%;
+            background-image: url("../../images/WebImages/tumblr_oi47j57OrC1sotuj5o2_500.gif");
+        }
+        .left, .right {
+            display: inline-block;
+            width: 50%;
+            height: 400px;
+            margin: 0px -2px;
+            transition-duration: 2s;
+        }
+        img {
+            height: inherit;
+            width: 100%;
+        }
+        #parent:hover {
+            transform: scale(2,2);
+        }
+        #parent:hover .left {
+            transform: translateX(-100%) scale(1,1);
+        }
+        #parent:hover .right {
+            transform: translateX(100%) scale(1,1);
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Transform Translate</h1>
+   
+   <div id="parent">
+       <div class="left">
+           <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       </div>
+       <div class="right">
+           <img src="../../images/images/l34882-ironman-rigged-original-model--98611.jpg" alt="">
+       </div>
+   </div>
+    
+</body>
+</html>

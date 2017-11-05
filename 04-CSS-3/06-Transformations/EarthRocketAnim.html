@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            height: 600px;
+        }
+        .earth {
+            position: absolute;
+            left: 40%;
+            top: 20%;
+        }
+        .rocket {
+            height: 100px;
+            width: 520px;
+            background-image: url("http://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Rocket-Vectot-PNG-Transparent-Image.png");
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            transition: 50s linear;
+        }
+        body:hover .rocket{
+            transform: rotateZ(3600deg);
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Rocket Animation</h1>
+   
+   <div id="container">
+       <div class="earth">
+           <img src="../../images/00-22.gif" alt="">
+       </div>
+       <div class="rocket">
+       </div>
+   </div>
+
+    
+</body>
+</html>
