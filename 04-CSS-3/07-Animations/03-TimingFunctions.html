@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            width: 200px;
+            bottom: 60px;
+            animation: cars 10s infinite;
+        }
+        @keyframes cars {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(0px, -500px) rotate(-180deg);
+            }
+            100% {
+                transform: translate(0px, 0px) rotate(180deg);
+            }
+        }
+        img {
+            transform: rotate(90deg);
+            width: 100%;
+        }
+        #div_2 {
+            left: 18%;
+            animation-timing-function: ease-in;
+        }
+        #div_3 {
+            left: 36%;
+            animation-timing-function: ease-in-out;
+        }
+        #div_4 {
+            left: 54%;
+            animation-timing-function: linear;
+        }
+        #div_5 {
+            left: 72%;
+            animation-timing-function: ease-out;
+        }
+    </style>
+</head>
+<body>
+   
+   <div id="div_1">
+       <img src="car.png" alt="car">
+   </div>
+   <div id="div_2">
+       <img src="car.png" alt="car">
+   </div>
+   <div id="div_3">
+       <img src="car.png" alt="car">
+   </div>
+   <div id="div_4">
+       <img src="car.png" alt="car">
+   </div>
+   <div id="div_5">
+       <img src="car.png" alt="car">
+   </div>
+    
+</body>
+</html>
